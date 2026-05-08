@@ -1,0 +1,9 @@
+{
+    "venvPath": "whatsapp_bulk_sender",
+    "venv": ".venv",
+    "executionEnvironments": [
+        {
+            "root": "whatsapp_bulk_sender"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+# Environments
+.venv/
+env/
+venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary Data & Sessions
+chrome_profile/
+data/settings.json
+
+# IDE
+.vscode/
+.idea/
+inmemory/
+
+# Executables
+*.exe
