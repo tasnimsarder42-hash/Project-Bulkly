@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     APP_ENV: str = "development"
     DEBUG: bool = True
     API_V1_PREFIX: str = "/api/v1"
-    ALLOWED_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:3001"]
+    ALLOWED_ORIGINS: list[str] = ["*"]
 
     # Database
     DATABASE_URL: str = "sqlite+aiosqlite:///./bulkly.db"
