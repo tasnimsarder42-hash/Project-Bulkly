@@ -16,8 +16,6 @@ import {
   Video,
   Bot,
   Sparkles,
-  Facebook,
-  Instagram,
   MessageCircle,
   Mail,
   Loader2
@@ -172,8 +170,8 @@ export default function CommunicationsPage() {
   const getChannelIcon = (channel: string) => {
     switch (channel) {
       case 'whatsapp': return <MessageCircle className="h-3 w-3 text-emerald-500" />;
-      case 'messenger': return <Facebook className="h-3 w-3 text-blue-500" />;
-      case 'instagram': return <Instagram className="h-3 w-3 text-pink-500" />;
+      case 'messenger': return <span className="h-3 w-3 text-blue-500 font-bold text-[10px] leading-none">f</span>;
+      case 'instagram': return <span className="h-3 w-3 text-pink-500 font-bold text-[10px] leading-none">ig</span>;
       case 'email': return <Mail className="h-3 w-3 text-amber-500" />;
       default: return <MessageCircle className="h-3 w-3" />;
     }

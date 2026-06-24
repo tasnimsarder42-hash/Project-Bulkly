@@ -23,9 +23,8 @@ import {
   DollarSign, 
   MousePointerClick,
   Users,
-  Facebook,
-  Instagram,
-  MonitorPlay
+  MonitorPlay,
+  Globe
 } from "lucide-react";
 
 interface Campaign {
@@ -61,7 +60,7 @@ export default function CampaignsPage() {
 
   const getPlatformIcon = (platform: string) => {
     switch (platform) {
-      case 'Meta': return <div className="flex -space-x-2"><Facebook className="h-4 w-4 text-blue-600 z-10 bg-background rounded-full" /><Instagram className="h-4 w-4 text-pink-600 bg-background rounded-full" /></div>;
+      case 'Meta': return <Globe className="h-4 w-4 text-blue-600" />;
       case 'Google': return <MonitorPlay className="h-4 w-4 text-red-500" />;
       case 'TikTok': return <div className="font-bold text-foreground bg-foreground text-background text-[10px] px-1 rounded-sm">TT</div>;
       default: return <Megaphone className="h-4 w-4" />;

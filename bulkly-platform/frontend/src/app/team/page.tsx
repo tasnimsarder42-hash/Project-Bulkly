@@ -21,7 +21,6 @@ import {
   Loader2
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { formatDistanceToNow } from "date-fns";
 
 // Matching backend Enum UserRole
 const ROLES = [
@@ -243,7 +242,7 @@ export default function TeamPage() {
                         )}
                       </td>
                       <td className="px-6 py-4 text-muted-foreground text-xs">
-                        {user.created_at ? formatDistanceToNow(new Date(user.created_at), { addSuffix: true }) : "Unknown"}
+                        {user.created_at ? new Date(user.created_at).toLocaleDateString() : "Unknown"}
                       </td>
                       <td className="px-6 py-4 text-right">
                         <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
